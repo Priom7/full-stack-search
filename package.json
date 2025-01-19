@@ -15,5 +15,9 @@
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "lodash.debounce": "^4.0.8",
+    "react-router-dom": "^7.1.1"
   }
 }

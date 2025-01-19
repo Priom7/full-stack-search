@@ -90,6 +90,32 @@ For larger or more time-intensive changes, you're welcome to outline your ideas 
 
 <!-- Write-up/conclusion section -->
 
+For the following project I tried to make it module and scalable for future implementation.
+
+Implemented: 
+
+1. Search hotels by name, country, city (match by substring)
+2. API for finding hotels, country and city by name.
+3. Individual details page for hotel, country, city
+
+About the Database model structure I am assuming this is a read only data model where the main focus was on reducing the complexity and dependency on other other data models.
+
+Improvements could be done:
+
+1. In Hotel data model -> object id of hotel and country could be implemented.
+    pros: This could help ensuring the consistency of data 
+    cons: the size the data might slightly increase and nested object query might increase query execution time.
+
+2. The naming convention could be improved for the objects/data models.
+    Example: In cities collection the key for name if city, in  countries collection its country and in hotels
+    collection its hotel_name. Following consistent naming convention might help in many ways.
+
+Future Implementations:
+
+1. Caching mechanism can be implemented for reducing server loads. And faster data fetching.
+2. State Management like redux can be implemented for managing states throughout the applications and reduce  api  calls and pros drilling. 
+
+
 _When all the behaviour is implemented, feel free to add some observations or conclusions you like to share in the section_
 
 ### Database structure
